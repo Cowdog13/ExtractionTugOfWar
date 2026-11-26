@@ -1,0 +1,25 @@
+; Engine configuration file.
+config_version=5
+
+[application]
+
+config/name="Dreamseeker"
+config/description="Extraction RPG: equip your Dreamseeker, enter one-shot Dreamshape portals, extract or lose it all."
+run/main_scene="res://scenes/hub.tscn"
+config/features=PackedStringArray("4.3", "GL Compatibility")
+
+[autoload]
+
+ItemDB="*res://scripts/autoload/item_db.gd"
+GameState="*res://scripts/autoload/game_state.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
